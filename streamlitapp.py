@@ -3,6 +3,7 @@ import pandas as pd
 import joblib
 import subprocess
 subprocess.call(['pip', 'install', 'joblib==1.3.2'])
+from sklearn.externals import joblib
 
 gb_model = joblib.load('gradient_boosting_model.joblib')
 
